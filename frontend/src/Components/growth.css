@@ -1,0 +1,371 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+body{
+    
+    background: url(../img/photo-1520412099551-62b6bafeb5bb.jpeg);
+    background-size: cover;
+    background-attachment: scroll; /* Ensures the background scrolls */
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+ body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .title {
+            background-color: #c0f18810;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.5rem 1rem;
+            margin: 3em;
+            border-radius: 5em;
+            border: 2px solid #91b46789;
+            font-weight: 550;
+            text-transform: uppercase;
+            backdrop-filter: blur(20px); 
+           
+        }
+        .logo {
+            font-size: 1.5rem;
+            margin-right: -8em;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .nav-links li {
+            margin: 0 0.75rem;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            transition: color 0.3s;
+        }
+        .nav-links a:hover {
+            color: #91b46789;
+        }
+
+                                     /* links */
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-links li {
+    display: inline-block;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+.profile-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.profile-menu .profile-img {
+    width:20px;
+    height: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, border-color 0.3s;
+}
+
+.profile-menu .profile-img:hover {
+    transform: scale(1.1);
+    border-color: #c0f188;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 15px;
+    background: rgba(20, 40, 20, 0.8); 
+    backdrop-filter: blur(8px); 
+    border-radius: 12px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.25);
+    z-index: 10;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    min-width: 160px;
+    overflow: hidden;
+    transition: opacity 0.3s ease-in-out, transform 0.2s ease-in-out;
+    opacity: 0;
+    transform: translateY(10px);
+}
+
+.dropdown-content li {
+    padding: 12px 15px;
+    text-align: left;
+    transition: background 0.3s ease-in-out;
+}
+
+.dropdown-content li a {
+    text-decoration: none;
+    color: #d0ffab; /* Soft green for readability */
+    font-weight: 500;
+    display: block;
+    transition: color 0.3s ease-in-out;
+}
+
+.dropdown-content li:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Smooth dropdown effect */
+.profile-menu:hover .dropdown-content {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.body{
+    display: flex;
+}
+
+.left{
+    margin-left:12em;
+   
+}
+
+.ltitle{
+    display: flex;
+    color: #fff;
+    margin-bottom: .5em;
+}
+
+.left h1{
+    font-size: 2.3em;
+}
+
+
+.state{
+    background: url(../img/Rectangle-2.png) no-repeat ;
+    width: 943px;
+    height: 251px;
+    backdrop-filter: blur(3px);
+    color: #ffffff;
+    padding-left: 3em;
+    
+  
+}
+.data{
+    display: flex;
+    margin-bottom: 1em;
+    gap: 3em;
+}
+.data img{
+    width: 230px;
+    position: fixed;
+    right: 7em;
+
+}
+.ldata {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 3.5em;
+    
+}
+
+.ldata div {
+    display: flex;
+    align-items: center;
+    gap: 5px; 
+}
+
+.ldata h3 {
+    margin: 0;
+    font-weight: 600;
+}
+
+.ldata p {
+    margin: 0;
+}
+
+
+
+.state button{
+    color: #f1f1f1;
+    background-color: #c0f18810;
+    padding: .5em;
+    border-radius: .5em;
+    box-shadow: black;
+    cursor: pointer;
+    transition: .8s;
+    
+    
+}
+
+.state button:hover{
+    transform: scale(1.1);
+    transition: .8s;
+}
+
+.timeline{
+    margin-top: 2em;
+    
+}
+
+
+
+.reminder {
+    position: fixed;
+    right: 3em;
+    top: 65%;
+    transform: translateY(-50%);
+    background: url(../img/Rectangle_5.png);
+    background-size: cover;
+    background-position: center;
+    width: 263px;
+    height: 600px;
+    color: #f1f1f1;
+    padding-top: 1em;
+}
+
+
+.reminder img{
+    width: 250px;
+    height: 137px;
+    margin: .8em;
+
+}
+
+.reminder h3{
+    margin-left:.8em ;
+}
+
+.get   {
+    margin-inline-start: 35%;
+    width: 25%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding: .4em;
+    color: #f1f1f1;
+    background-color: #c0f18810;
+    backdrop-filter: blur(20px);
+    border-radius: 2em;
+    transition: .8s;
+    cursor: pointer;
+}
+
+.get:hover{
+    background-color: #2542049d;
+}
+
+.form{
+    background: url(../img/Rectangle--2.png);
+    width: 972px;
+    height: 709px;
+    margin-bottom: 3em;
+    backdrop-filter: blur(3px);
+}
+
+form{
+    padding: 3em;
+}
+
+
+
+
+/* File input custom button */
+.file-label {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s;
+  }
+  
+
+  .file-label:hover {
+    background-color: #45a049;
+  }
+  
+
+  input[type="file"] {
+    display: none;
+  }
+  
+
+  form {
+    max-width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+
+  }
+  
+
+  h4 {
+    font-size: 1.2em;
+    color: #ffffff;
+    margin-bottom: 5px;
+    text-align: left;
+    font-weight: bold;
+  }
+  
+  input[type="date"], input[type="number"], input[type="text"] {
+    width: 100%;
+    padding: 16px;
+    margin: 0 0 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #fff;
+  }
+  
+  form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #c0f18810;
+    color: white;
+
+    border-radius: .8em;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 1em;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  input::placeholder {
+    color: #aaa;
+    font-style: italic;
+  }
+  
+  /* Focus effect */
+  input:focus {
+    border-color: #4CAF50;
+    outline: none;
+  }
+
+  
+  
+  
+
+
+
