@@ -1,0 +1,103 @@
+/* Container Styling */
+.add-plant-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
+    backdrop-filter: blur(10px); /* Blur effect */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: white;
+  }
+  
+  /* Title Styling */
+  .form-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #e0e0e0;
+    margin-bottom: 20px;
+  } 
+  
+  /* Form styling to align labels to the left */
+  .add-plant-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align form items to the left */
+    gap: 15px;
+  }
+  
+  .add-plant-form .mb-3 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .add-plant-form .form-label {
+    font-size: 16px;
+    margin-bottom: 8px;
+    text-align: left; /* Align label text to the left */
+    color: #ffffff;
+  }
+  
+  /* Input Fields Styling */
+  .add-plant-form input,
+  .add-plant-form select,
+  .add-plant-form textarea {
+    width: 95%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.8); /* Light background for input fields */
+    color: #333;
+  }
+  
+  /* Button Styling */
+  .add-plant-form button {
+    background-color: #20483b;
+    color: white;
+    padding: 12px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+  }
+  
+  .add-plant-form button:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Loading Text */
+  .loading {
+    text-align: center;
+    font-size: 18px;
+    color: #7f8c8d;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .add-plant-container {
+      max-width: 100%;
+      padding: 15px;
+    }
+  
+    .form-title {
+      font-size: 22px;
+    }
+  
+    .add-plant-form input,
+    .add-plant-form select,
+    .add-plant-form textarea {
+      font-size: 14px;
+    }
+  
+    .add-plant-form button {
+      font-size: 16px;
+      padding: 10px;
+    }
+  }
+  
