@@ -1,0 +1,220 @@
+body {
+  background: url(../img/photo-1520412099551-62b6bafeb5bb.jpeg);
+  background-size: cover;
+  background-attachment: scroll; /* Ensures the background scrolls */
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+.title {
+  background-color: #dbdfd623;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  margin: 3em;
+  border-radius: 5em;
+  border: 2px solid #91b46789;
+  font-weight: 550;
+  text-transform: uppercase;
+}
+.logo {
+  font-size: 1.5rem;
+  margin-right: -8em;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.nav-links li {
+  margin: 0 0.75rem;
+}
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s;
+}
+.nav-links a:hover {
+  color: #91b46789;
+}
+
+/* links */
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links li {
+  display: inline-block;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.profile-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.profile img {
+  width: 20px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px; /* Adjust based on your layout */
+  margin: 20px auto; /* Center the header */
+}
+
+.titlee {
+  flex-grow: 1;
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.get-report {
+  background: url(../img/buttonm.png);
+  background-size: cover;
+  background-position: center;
+  border: 0;
+  width: 95px;
+  height: 38px;
+  margin-top: 1em;
+  padding-bottom: 2em;
+  color: #f1f1f1;
+  cursor: pointer;
+  transition: 0.8s;
+}
+
+/* ADD CATEGORY CARD chtgpt */
+
+.plant-cards {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-bottom: 10px;
+}
+
+.card {
+    background: #123212;
+    color: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 280px;
+    flex-shrink: 0;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.card h2 {
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+}
+
+.card p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.delete-btn,
+.edit-btn {
+    background-color: #ff4d4d;
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background 0.3s ease;
+}
+
+.delete-btn:hover {
+    background: #ff6666;
+}
+
+.edit-btn {
+    background: #3f8b3f;
+}
+
+.edit-btn:hover {
+    background: #45a049;
+}
+
+/* Add Category Card */
+.add-category {
+    background: #0c1c0c;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 280px;
+    height: 200px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+    flex-shrink: 0;
+}
+
+.add-category:hover {
+    background: #123212;
+    transform: scale(1.05);
+}
+
+.add-icon {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.add-btn {
+    background: #3f8b3f;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-size: 1rem;
+}
+
+.add-btn:hover {
+    background: #45a049;
+}
