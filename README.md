@@ -1,2 +1,2 @@
 #PLANT CARE WEBPAGE
-#help to calculate plant growth
+#The Plant Care Management System is a web-based application designed to help users and administrators manage plant information efficiently. It allows adding, updating, viewing, and deleting plant records, tracking growth and watering schedules, and organizing plants by categories. The system provides separate interfaces for admins and users, making it ideal for home gardeners or plant care businesses. Built using React, Node.js, Express, and MongoDB, the platform offers a user-friendly and responsive experience.
