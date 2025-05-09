@@ -6,7 +6,8 @@ const multer = require("multer");
 const path = require("path");
 const plantRoutes = require("./Route/plantRoutes"); 
 const growthRoutes = require("./Route/growthRoutes"); 
-
+const router = require('./Route/waterSchedule');
+const routes =require("./Route/categoryroutes");
 const app = express();
 app.use(express.json());
 app.use(cors());
@@ -40,6 +41,7 @@ app.use(express.urlencoded({ extended: true }));
 
 // Serve static files from 'public' directory
 app.use("/public", express.static("public"));
+app.use("/uploads", express.static(path.join(__dirname, "public/uploads"))); 
 
 // MongoDB connection setup
 const URL = process.env.MONGODB_URL;
@@ -50,6 +52,8 @@ mongoose.connect(URL, { useNewUrlParser: true, useUnifiedTopology: true })
 // Routes setup
 app.use("/plants", plantRoutes);   
 app.use("/growth", growthRoutes(upload));
+app.use("/water",router); 
+app.use("/categories", routes);
 
 
 app.use('/uploads', express.static('uploads'));
