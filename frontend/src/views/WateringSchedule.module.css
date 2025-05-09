@@ -1,0 +1,140 @@
+body{
+    background-image: url('../assets/background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1{
+    color: var(--color-white);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* New Schedule */
+.newScheduleContainer{
+    margin-bottom: 3rem;
+}
+
+.newScheduleContainer button{
+    margin-top: 0.2rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 4px 4px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.newScheduleContainer button:hover{
+   background-color: var(--color-navbar-hover);
+   color: var(--color-white);
+}
+
+/* Watering History */
+.historyContainer h2{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.historyContainer p{
+   margin: 0;
+   margin-bottom: 12px;
+}
+
+.historyContainer .card {
+    background-color: var(--color-navbar);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 12px 16px;
+    border-radius: 8px;
+    width: 450px;
+    margin-bottom: 16px;
+}
+  
+.historyContainer .editButton, .deleteButton {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 4px 8px;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-right: 8px;
+}
+  
+.historyContainer .editButton:hover {
+    border: none;
+    background-color: var(--color-navbar-hover);
+}
+  
+.historyContainer .deleteButton:hover {
+    border: none;
+    background-color:  var(--color-navbar-hover-red);
+}
+
+.historyContainer .emptyMessage {
+    color: lightgray;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+/* Notification Setting */
+.notificationContainer {
+    margin-top: 2rem;
+    background-color: var(--color-navbar);
+    color: white;
+    padding: 15px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    width: 250px;
+}
+
+.notificationContainer .title {
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 2rem;
+    margin-top: 0rem;
+    text-align: center;
+}
+
+.notificationContainer .options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 2px solid var(--color-navbar-hover);
+    border-radius: 4px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+}
+  
+input[type="checkbox"]:checked::after {
+    content: "✔";
+    font-size: 18px;
+    color: var(--color-navbar-hover);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+}
